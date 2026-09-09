@@ -12,7 +12,6 @@ newMessage.addEventListener("click", function () {
 
     // Hide the first message
     newMessage.style.display = "none";
-    nextButton.style.display = "none";
 
     // Show the birthday section
     birthdayMessage.style.display = "block";
@@ -46,10 +45,9 @@ newMessage.addEventListener("click", function () {
         balloons.appendChild(balloon);
     }
 });
-
-birthdayMusic.addEventListener("ended", function() {
-    nextButton.style.display = "block";
-});
+//birthdayMusic.addEventListener("ended", function() {
+  //  nextButton.style.display = "block";
+//});
 
 nextButton.addEventListener("click", function () {
     birthdayMessage.style.display = "none";

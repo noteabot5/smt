@@ -119,18 +119,37 @@ body {
     margin-top: 50px;
 }
 
+.listen-next {
+    display: flex;
+    gap: 10px;
+}
+
+.finish-listening {
+    font-size: 20px;
+    margin-top: 170px;
+    margin-left: 550px;
+}
+
 .next-button, .final-button {
     border: 3px solid #e8a0b8;
     background-color: beige; 
     padding: 20px 30px;
-    margin: auto 650px;
     border-radius: 20px;
-    margin-top: 150px;
     text-decoration: none; 
     color: black;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    width: fit-content; 
+    display: block;
+    margin: 150px auto 0;
+    margin-left: 10px;
+}
+
+.final-button {
+    display: none; 
+    margin-top: -5px;
+    margin-left: 700px;
 }
 
 .bday-messages { 
@@ -177,11 +196,6 @@ body {
     height: auto;
     width: 800px;
     margin-top: 200px;
-}
-
-.final-button {
-    display: none; 
-    margin-top: -5px;
 }
 
 @keyframes bounce {
