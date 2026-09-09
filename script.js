@@ -6,6 +6,7 @@ const birthdayMusic = document.getElementById("birthday-music");
 const balloons = document.getElementById("balloons");
 const finalButton = document.getElementById("final-button");
 const finalMessage = document.getElementById("final-message");
+const messageBoxes = document.querySelectorAll(".message-box");
 
 newMessage.addEventListener("click", function () {
 
@@ -31,7 +32,7 @@ newMessage.addEventListener("click", function () {
         balloon.classList.add("balloon");
 
         // Put balloon at a random place across the bottom
-        balloon.style.left = Math.random() * 100 + "%";
+        balloon.style.left = Math.random() * 95 + "%";
 
         // Make each balloon start at a slightly different time
         balloon.style.animationDelay =
@@ -64,4 +65,13 @@ finalButton.addEventListener("click", function () {
 
     // Make the birthday wishes appear
     finalMessage.style.display = "flex";
+});
+
+messageBoxes.forEach(function(box) { 
+    box.addEventListener("click", function() {
+        const openText = box.querySelector(".message");
+        const hiddenMessage = box.querySelector(".hidden-message");
+        openText.style.display = "none";
+        hiddenMessage.style.display = "block";
+    });
 });

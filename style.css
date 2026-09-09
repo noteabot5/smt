@@ -142,17 +142,25 @@ body {
 
 }
 
-.message-1, .message-2, .message-3, .message-4 {
+.message-box {
     background-color: #fff7e8;
     border: 3px solid #e8a0b8;
     width: 500px;
     padding: 20px 10px;
     text-align: center;
     transition: transform 0.3s ease; 
+    cursor: pointer;
 }
 
-.message-1:hover, .message-2:hover, .message-3:hover, .message-4:hover {
+.message-box:hover {
     transform: scale(1.1); 
+}
+
+.message, .hidden-message {
+    font-size: 20px; 
+}
+.hidden-message {
+    display: none; 
 }
 
 .birthday-loveya {
