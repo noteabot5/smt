@@ -16,10 +16,11 @@ newMessage.addEventListener("click", function () {
     // Show the birthday section
     birthdayMessage.style.display = "block";
     
-    birthdayMusic.play();
+    birthdayMusic.play().catch(function () {});
 
-    // Create 500 balloons
-    for (let i = 0; i < 500; i++) {
+    // Create balloons (fewer on phones so the page stays smooth)
+    const balloonCount = window.innerWidth < 768 ? 120 : 500;
+    for (let i = 0; i < balloonCount; i++) {
 
         // Create one balloon
         const balloon = document.createElement("span");
