@@ -68,7 +68,7 @@ img {
 }
 
 .cat-gifs {
-    position: relative; 
+    position: static;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -85,34 +85,35 @@ img {
     z-index: 1;
 }
 
-/* top left */
+/* TOP LEFT — move slightly RIGHT */
 .mini-cat-gif-1 {
-    top: -450px;
-    left: 450px;
+    top: 150px;
+    left: 150px;
 }
 
-/* top right */
+/* TOP RIGHT — move slightly LEFT */
 .mini-cat-gif-2 {
-    top: -450px;
-    right: 450px;
+    top: 150px;
+    right: 150px;
 }
 
-/* bottom left */
+/* BOTTOM LEFT — move slightly RIGHT */
 .mini-cat-gif-3 {
-    bottom: -50px;
-    left: 450px;
+    top: 550px;
+    left: 150px;
 }
 
-/* bottom right */
+/* BOTTOM RIGHT — move slightly LEFT */
 .mini-cat-gif-4 {
-    bottom: -90px;
-    right: 450px;
+    top: 550px;
+    right: 150px;
 }
 
 .birthday-message {
     display: none; 
     text-align: center;
     margin-top: 150px;
+    position: relative; 
 }
 
 .balloon {
